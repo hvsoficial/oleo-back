@@ -13,7 +13,7 @@ const errorHandler: ErrorRequestHandler = (error, request, response, next) => {
 			errors[err.path] = err.errors
 		})
 
-		return response.status(400).json({ message: 'Erro de validação!', errors })
+		return response.status(400).json({ message: 'Erro de validação! Não foi preenchido todos os campos!', errors })
 	}
 
 	console.error(error)
