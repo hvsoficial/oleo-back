@@ -4,7 +4,7 @@ export default {
 	render(image: Image) {
 		return {
 			id: image.id,
-			url: `https://oleopro.herokuapp.comuploads/${image.path}`
+			url: `https://oleopro.herokuapp.com/uploads/${image.path}`
 		}
 	},
 
